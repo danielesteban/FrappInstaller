@@ -1,0 +1,30 @@
+<div class="container">
+	<table class="table updates">
+		<thead>
+			<tr>
+				<th colspan="3">
+					<button class="btn btn-success btn-block update">{{L 'updateAll'}}</button>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each frapps}}
+				<tr>
+					<td class="text-center">
+						{{#if icon}}
+							<img src="{{path}}/{{icon}}">
+						{{else}}
+							<span class="h3">{{i 'file'}}</span>
+						{{/if}}
+					</td>
+					<td width="70%">
+						{{name}}
+					</td>
+					<td class="text-right text-muted">
+						v{{version}}
+					</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>

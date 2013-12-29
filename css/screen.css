@@ -10,3 +10,15 @@ body div.container {
 .well {
 	margin-bottom: 10px;
 }
+
+.table.updates th {
+	padding: 10px 80px 30px;
+}
+
+.table.updates td {
+	vertical-align: middle;
+}
+
+.table.updates img {
+	height: 30px		
+}

@@ -1,8 +1,12 @@
 LANG = {
 	en : {
-		installing : 'Installing'
+		installing : 'Installing',
+		pendingUpdates : '%d Pending updates',
+		updateAll : 'Update all'
 	},
 	es : {
-		installing : 'Instalando'
+		installing : 'Instalando',
+		pendingUpdates : '%d Actualizaciones pendientes',
+		updateAll : 'Actualizar todo'
 	}
 };
