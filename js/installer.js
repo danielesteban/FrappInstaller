@@ -18,7 +18,6 @@ UPDATER = function(frapps) {
 		pendingUpdates : pendingUpdates
 	}));
 
-	frapps = JSON.parse(JSON.stringify(frapps));
 	$('button.update').click(function() {
 		$(this).prop('disabled', true);
 		var update = function() {
