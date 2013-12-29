@@ -18,12 +18,13 @@ UPDATER = function(frapps) {
 		pendingUpdates : pendingUpdates
 	}));
 
+	frapps = JSON.parse(JSON.stringify(frapps));
 	$('button.update').click(function() {
 		$(this).prop('disabled', true);
 		var update = function() {
-				if(!frapps.length) return FRAPPS.close();
+				if(!frapps.length) return FRAPP.close();
 				var frapp = frapps.shift();
-				FRAPPS.update(frapp, function() {
+				FRAPP.update(frapp, function() {
 					$('table tbody tr').first().fadeOut('fast', function() {
 						$(this).remove();
 						update();
