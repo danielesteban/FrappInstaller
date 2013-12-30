@@ -22,3 +22,7 @@ body div.container {
 .table.updates img {
 	height: 30px		
 }
+
+.table.updates .glyphicon-chevron-right {
+	top: 0;
+}
