@@ -21,7 +21,7 @@ UPDATER = function(frapps) {
 	$('button.update').click(function() {
 		$(this).prop('disabled', true);
 		var update = function() {
-				if(!frapps.length) return FRAPP.close();
+				if(!frapps.length) return window.close();
 				var frapp = frapps.shift();
 				FRAPP.update(frapp, function() {
 					$('table tbody tr').first().fadeOut('fast', function() {
@@ -46,7 +46,7 @@ window.addEventListener('frapp.init', function(e) {
 
 	/* Process params */
 	var params = e.detail.params;
-	if(!params || (!params.install && !params.updates)) return FRAPP.close();
+	if(!params || (!params.install && !params.updates)) return window.close();
 	params.install && INSTALLER(params.install);
 	params.updates && UPDATER(params.updates);
 });
